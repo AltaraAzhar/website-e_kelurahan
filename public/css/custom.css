@@ -1,0 +1,271 @@
+/* Custom Styles for Kelurahan Pabuaran Mekar Website */
+
+/* Navbar Color Variables - Default: White */
+:root {
+    --navbar-bg: #ffffff;
+    --navbar-text: #1f2937;
+    --navbar-text-secondary: #6b7280;
+    --navbar-border: #e5e7eb;
+    --navbar-hover-text: #f59e0b;
+    --navbar-hover-bg: #f3f4f6;
+    --navbar-mobile-bg: #ffffff;
+    --navbar-mobile-hover-bg: #f3f4f6;
+    --navbar-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+        0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 80px; /* Space for fixed navbar */
+}
+
+/* Hero Section Overlay */
+.hero-overlay {
+    background: linear-gradient(
+        135deg,
+        rgba(30, 41, 59, 0.85) 0%,
+        rgba(15, 23, 42, 0.9) 100%
+    );
+}
+
+/* Logo Shield Shape */
+.logo-shield {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .logo-shield::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-top: 12px solid #FFC107;
+}
+
+.logo-shield-inner {
+    width: 32px;
+    height: 32px;
+    background: #4CAF50;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* Card Styles */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, #ffc107 0%, #f4b400 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #f4b400 0%, #ffc107 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+}
+
+.btn-outline {
+    border: 2px solid #ffc107;
+    color: #ffc107;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #ffc107;
+    color: #0f172a;
+    transform: translateY(-2px);
+}
+
+/* Stat Card */
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Section Spacing */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Hero Background */
+.hero-bg {
+    background: linear-gradient(
+            135deg,
+            rgba(15, 23, 42, 0.95) 0%,
+            rgba(30, 41, 59, 0.9) 100%
+        ),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Accordion Styles */
+.accordion-item {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-button {
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #f9fafb;
+}
+
+/* Input Styles */
+.form-input {
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+    outline: none;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status-processing {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.status-completed {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffc107;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f4b400;
+}
+
+/* Navbar Styles using CSS Variables */
+.navbar-custom {
+    background-color: var(--navbar-bg);
+    border-bottom: 1px solid var(--navbar-border);
+    box-shadow: var(--navbar-shadow);
+}
+
+.navbar-custom .navbar-text-primary {
+    color: var(--navbar-text);
+}
+
+.navbar-custom .navbar-text-secondary {
+    color: var(--navbar-text-secondary);
+}
+
+.navbar-custom .navbar-link {
+    color: var(--navbar-text);
+    transition: color 0.2s ease;
+}
+
+.navbar-custom .navbar-link:hover {
+    color: var(--navbar-hover-text);
+}
+
+.navbar-custom .navbar-link.active {
+    color: var(--navbar-hover-text);
+    border-bottom-color: var(--navbar-hover-text);
+}
+
+.navbar-custom .navbar-mobile-menu {
+    background-color: var(--navbar-mobile-bg);
+    border-top: 1px solid var(--navbar-border);
+}
+
+.navbar-custom .navbar-mobile-link {
+    color: var(--navbar-text);
+    transition: background-color 0.2s ease;
+}
+
+.navbar-custom .navbar-mobile-link:hover {
+    background-color: var(--navbar-mobile-hover-bg);
+}
+
+.navbar-custom .navbar-button {
+    color: var(--navbar-text);
+    transition: color 0.2s ease;
+}
+
+.navbar-custom .navbar-button:hover {
+    color: var(--navbar-hover-text);
+}
