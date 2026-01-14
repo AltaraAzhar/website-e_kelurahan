@@ -51,6 +51,7 @@ Bertanggung jawab merancang, membangun, dan mengintegrasikan modul chatbot berba
     * Dokumentasi teknis modul AI
   
 6. Technical Writer (TW) -- Enna Simulung Sumule
+
 Bertanggung jawab menyusun dokumentasi sistem sebagai pendukung proses pengembangan dan penggunaan aplikasi. Dokumentasi ini bertujuan untuk memudahkan pengguna serta pihak pengembang dalam memahami cara kerja sistem. Adapun dokumen yang dihasilkan meliputi:
     * Project Charter
     * Laporan Akhir
