@@ -107,7 +107,7 @@ echo "Pengajuan berhasil dibuat! ID: " . $pengajuan->_id . "\n";
 
 ```env
 # ✅ BENAR
-MONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net/db?retryWrites=true&w=majority
+MONGO_URI=MONGO_URI=mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER_URL>/<DB_NAME>?retryWrites=true&w=majority
 
 # ❌ SALAH (ada spasi)
 MONGO_URI= mongodb+srv://...
